@@ -1,15 +1,18 @@
 
+
+# Definimos el tamaño del tablero: 10 filas y 10 columnas.
 TAMANO_TABLERO = 10
 
+# Definimos la flota: cada barco tiene un nombre y una longitud.
 FLOTA = {
-        "barco1_1": 1,
-        "barco1_2": 1,
-        "barco1_3": 1,
-        "barco1_4": 1,
-        "barco2_1": 2,
-        "barco2_2": 2,
-        "barco2_3": 2,
-        "barco3_1": 3,
-        "barco3_2": 3,
-        "barco4_1": 4}
+        "Luna_1": 1,
+        "Luna_2": 1,
+        "Luna_3": 1,
+        "Luna_4": 1,
+        "Sunny_1": 2,
+        "Sunny_2": 2,
+        "Sunny_3": 2,
+        "Victoria_1": 3,
+        "Victoria_2": 3,
+        "Primavera": 4}
 
