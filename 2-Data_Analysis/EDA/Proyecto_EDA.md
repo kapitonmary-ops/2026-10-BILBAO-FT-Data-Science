@@ -36,7 +36,7 @@ El codigo deberá seguir la siguiente estructura de carpetas:
 2. src/data: todos los archivos de datos utilizados en el analisis. No subir a GitHub archivos demasiado pesados.
 3. src/notebooks: los notebooks usados para pruebas (si los hay).
 4. src/utils: todos los modulos y funciones auxiliares creados para el desarrollo del proyecto (si los hay).
-5. src/main.ipynb: en este notebook tendrás que resumir todos los pasos de la analítica..
+5. src/main.ipynb: en este notebook tendrás que resumir todos los pasos de la analítica.. # memoria
 
 **GitHub**: hay que crear un README con una descripción de tu proyecto. Breve. El objetivo de este README es enterarse de forma rápida de qué va tu proyecto y qué tecnologías has utilizado para llevarlo a cabo, no es más que un escaparate de tu trabajo. Hay que ir documentando bien los trabajos para acabar el bootcamp con un buen portfolio. En [este enlace](https://github.com/alexhuang1117/Data-Science-Portfolio) tienes un ejemplo de cómo tener documentados los proyectos en tu GitHub. Encontrarás en el notebook de markdown todo lo que necesitas para crear un README decente.
 
