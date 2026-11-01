@@ -1,0 +1,44 @@
+# Propuesta de fuentes de datos para el proyecto
+
+**Tema:** Education & Economic Opportunity Gap
+
+**Pregunta de investigación:**
+
+¿La educación garantiza mejores oportunidades económicas? ¿Qué importancia tienen las competencias reales frente al nivel de educación formal?
+
+Para desarrollar el proyecto, propongo utilizar las siguientes fuentes de datos oficiales:
+
+### 1. Eurostat — `lfsa_ergaed`
+
+**Employment rates by educational attainment level**
+
+- Fuente: Eurostat.
+- Periodo: 2015–2025.
+- Cobertura: países de la Unión Europea.
+- Objetivo: analizar la relación entre el nivel educativo y las tasas de empleo en diferentes países europeos.
+
+Enlace: https://ec.europa.eu/eurostat/databrowser/view/lfsa_ergaed/default/table?lang=en
+
+### 2. Eurostat — `lfsa_erganedm`
+
+**Employment rates by migration status, citizenship and educational attainment level**
+
+- Fuente: Eurostat.
+- Periodo: 2021–2025.
+- Cobertura: países europeos disponibles.
+- Objetivo: comparar las tasas de empleo según el nivel educativo y la situación migratoria.
+
+Enlace: https://ec.europa.eu/eurostat/databrowser/view/lfsa_erganedm/default/table?lang=en
+
+### 3. OECD — PIAAC Cycle 2, Spain
+
+**Survey of Adult Skills**
+
+- Fuente: OECD.
+- País: España.
+- Archivo descargado: `prgespp2.csv`.
+- Contenido: información individual sobre educación, competencias cognitivas, empleo e ingresos.
+- Objetivo: estudiar la relación entre el nivel educativo, las competencias reales y los resultados económicos.
+
+Enlace: https://www.oecd.org/en/data/datasets/piaac-2nd-cycle-database.html
+
