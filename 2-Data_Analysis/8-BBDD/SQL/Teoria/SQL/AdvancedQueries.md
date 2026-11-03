@@ -77,7 +77,7 @@ The SELECT TOP clause is used to specify the number of records to return.
 Syntax
 
 ```sql
-SELECT TOP number|percent column_name(s)
+SELECT TOP number|percent column_name(s)# отсортировано по самому большему
 FROM table_name;
 ```
 
@@ -98,7 +98,7 @@ Replaces NULL with the specified replacement value.
 Syntax
 
 ```sql
-ISNULL ( check_expression , replacement_value )  
+ISNULL ( check_expression , replacement_value )
 ```
 
 ## SQL ISNULL Examples
