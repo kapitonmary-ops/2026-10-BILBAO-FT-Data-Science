@@ -58,7 +58,7 @@ FROM tracks t
 WHERE Composer = "AC/DC";
 
 #10 Cuántos artículos tiene cada factura?
-SELECT InvoiceId, Count(*)
+SELECT InvoiceId, SUM(Quantity)
 FROM invoice_items
 GROUP BY InvoiceId;
 
@@ -108,8 +108,7 @@ WHERE c.Country = 'Brazil';
 #2 Obtén cada factura asociada a cada agente de ventas con su nombre completo
 SELECT
     	i.InvoiceId,
-    	e.FirstName,
-    	e.LastName
+    	e.FirstName || '   ' || e.LastName as Agente
 FROM invoices i
 JOIN customers c
     	ON i.CustomerId = c.CustomerId
@@ -151,7 +150,6 @@ JOIN genres g
 JOIN media_types m
     	ON t.MediaTypeId = m.MediaTypeId;
 
-
 #6 Cuántas canciones hay en cada playlist
 SELECT
 	p.Name,
@@ -160,8 +158,6 @@ FROM playlist_track pt
 JOIN playlists p
 	ON pt.PlaylistId = p.PlaylistId
 GROUP BY p.Name;
-
-
 
 #7 Cuánto ha vendido cada empleado
 SELECT
@@ -174,8 +170,6 @@ JOIN customers c
 JOIN invoices i
 	ON c.CustomerId = i.CustomerId
 GROUP BY e.EmployeeId, e.FirstName, e.LastName;
-
-
 
 #8 ¿Quién ha sido el agente de ventas que más ha vendido en 2009?
 SELECT
@@ -191,7 +185,6 @@ WHERE i.InvoiceDate LIKE '2009%'
 GROUP BY e.EmployeeId, e.FirstName, e.LastName
 ORDER BY SUM(i.Total) DESC
 LIMIT 1;
-
 
 #9¿Cuáles son los 3 grupos que más han vendido?
 SELECT
