@@ -8,7 +8,7 @@
 
 Para desarrollar el proyecto, propongo utilizar las siguientes fuentes de datos oficiales:
 
-### 1. Eurostat — `lfsa_ergaed`
+### 1. Eurostat — `eurostat_employment_education.csv`
 
 **Employment rates by educational attainment level**
 
@@ -19,7 +19,7 @@ Para desarrollar el proyecto, propongo utilizar las siguientes fuentes de datos 
 
 Enlace: https://ec.europa.eu/eurostat/databrowser/view/lfsa_ergaed/default/table?lang=en
 
-### 2. Eurostat — `lfsa_erganedm`
+### 2. Eurostat — `eurostat_employment_migration_education.csv`
 
 **Employment rates by migration status, citizenship and educational attainment level**
 
@@ -36,7 +36,7 @@ Enlace: https://ec.europa.eu/eurostat/databrowser/view/lfsa_erganedm/default/tab
 
 - Fuente: OECD.
 - País: España.
-- Archivo descargado: `prgespp2.csv`.
+- Archivo descargado: `oecd_piaac_cycle2_spain_microdata.csv`.
 - Contenido: información individual sobre educación, competencias cognitivas, empleo e ingresos.
 - Objetivo: estudiar la relación entre el nivel educativo, las competencias reales y los resultados económicos.
 
@@ -50,7 +50,7 @@ A partir de la pregunta de investigación y de las fuentes de datos seleccionada
 
 **Hipótesis:** Las personas con un nivel educativo más alto presentan una mayor tasa de empleo. La magnitud de esta relación varía entre los países europeos.
 
-- **Fuente:** Eurostat, `lfsa_ergaed`.
+- **Fuente:** Eurostat, eurostat_employment_education.csv.
 - **Variables principales:** nivel educativo, tasa de empleo, país y año.
 - **Análisis previsto:** comparar las tasas de empleo por nivel educativo y país, y observar su evolución temporal.
 
@@ -58,7 +58,7 @@ A partir de la pregunta de investigación y de las fuentes de datos seleccionada
 
 **Hipótesis:** Entre personas con el mismo nivel educativo, la tasa de empleo es menor para la población migrante que para la población no migrante.
 
-- **Fuente:** Eurostat, `lfsa_erganedm`.
+- **Fuente:** Eurostat, eurostat_employment_migration_education.csv
 - **Variables principales:** situación migratoria/c ciudadanía (según las categorías disponibles), nivel educativo y tasa de empleo.
 - **Análisis previsto:** comparar las tasas de empleo entre grupos con el mismo nivel educativo.
 
@@ -66,7 +66,7 @@ A partir de la pregunta de investigación y de las fuentes de datos seleccionada
 
 **Hipótesis exploratoria:** La diferencia en la tasa de empleo entre población migrante y no migrante aumenta en los niveles educativos más altos.
 
-- **Fuente:** Eurostat, `lfsa_erganedm`.
+- **Fuente:** Eurostat, eurostat_employment_migration_education.csv.
 - **Variables principales:** situación migratoria, nivel educativo y tasa de empleo.
 - **Análisis previsto:** calcular y comparar la brecha de empleo entre grupos para cada nivel educativo.
 - **Nota:** esta hipótesis se contrastará únicamente si las categorías y observaciones disponibles permiten una comparación consistente.
@@ -75,18 +75,18 @@ A partir de la pregunta de investigación y de las fuentes de datos seleccionada
 
 **Hipótesis:** En España, unas competencias cognitivas más altas se relacionan con mayores ingresos, incluso al comparar personas con un nivel educativo similar.
 
-- **Fuente:** OECD, PIAAC Cycle 2, Spain (`prgespp2.csv`).
+- **Fuente:** OECD, PIAAC Cycle 2, Spain (oecd_piaac_cycle2_spain_microdata`.csv`).
 - **Variables principales:** competencias cognitivas, nivel educativo e ingresos.
 - **Análisis previsto:** explorar la relación entre competencias e ingresos, controlando o agrupando por nivel educativo.
 - **Nota:** la interpretación deberá tener en cuenta la estructura y las variables disponibles en el archivo PIAAC.
 
 ## Relación entre hipótesis y fuentes
 
-| Hipótesis | Fuente de datos                              | Enfoque                                                              |
-| ---------- | -------------------------------------------- | -------------------------------------------------------------------- |
-| H1         | Eurostat `lfsa_ergaed`                     | Educación y tasa de empleo por país y año                         |
-| H2         | Eurostat `lfsa_erganedm`                   | Comparación de empleo por situación migratoria y nivel educativo   |
-| H3         | Eurostat `lfsa_erganedm`                   | Diferencias de empleo según nivel educativo y situación migratoria |
-| H4         | OECD PIAAC Cycle 2, Spain (`prgespp2.csv`) | Competencias cognitivas e ingresos dentro de niveles educativos      |
+| Hipótesis | Fuente de datos                                                     | Enfoque                                                              |
+| ---------- | ------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| H1         | Eurostat `eurostat_employment_education.csv`                      | Educación y tasa de empleo por país y año                         |
+| H2         | Eurostat `eurostat_employment_migration_education.csv`            | Comparación de empleo por situación migratoria y nivel educativo   |
+| H3         | Eurostat `eurostat_employment_migration_education.csv`            | Diferencias de empleo según nivel educativo y situación migratoria |
+| H4         | OECD PIAAC Cycle 2, Spain `oecd_piaac_cycle2_spain_microdata.csv` | Competencias cognitivas e ingresos dentro de niveles educativos      |
 
 **Alcance:** Las hipótesis expresan relaciones que se van a explorar con los datos; no implican causalidad. Los resultados finales dependerán de la disponibilidad, calidad y comparabilidad de las variables.
