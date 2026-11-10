@@ -53,7 +53,7 @@ La exposición ocupacional a AI se utilizará como contexto analítico. No repre
 
 ## Hipótesis de análisis
 
-Se establecen **tres hipótesis en total: H1, H2 y H3. No se incluye H4.**
+Se establecen **tres hipótesis en total: H1, H2 y H3.**
 
 ### H1. Educación y empleo en Europa
 
