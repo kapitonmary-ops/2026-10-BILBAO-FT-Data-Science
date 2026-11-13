@@ -1,0 +1,7 @@
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+# datos pesados (ver src/data/README.md)
+src/data/datos_educacion_habilidades_empleo_espana.csv
+src/data/daioe_isco08.xlsx
+presentation/archivo_v1/
